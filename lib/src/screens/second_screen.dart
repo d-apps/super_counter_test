@@ -29,7 +29,7 @@ class SecondScreen extends StatelessWidget {
               child: Text("Go to Third Screen"),
               onPressed: (){
 
-                Get.to(
+                Get.off(
                   () => ThirdScreen(),
                 );
 

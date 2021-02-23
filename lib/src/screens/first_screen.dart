@@ -59,7 +59,7 @@ class FirstScreen extends StatelessWidget {
               child: Text("Go to Second Screen"),
               onPressed: (){
 
-                Get.to(
+                Get.off(
                   () => SecondScreen(),
                 );
 
