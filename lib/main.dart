@@ -7,8 +7,9 @@ void main() {
 
   WidgetsFlutterBinding.ensureInitialized();
 
+  Get.put<Controller>(Controller());
   //Get.put(Controller());
-  //Get.put(Controller(), tag: "controller1", permanent: true);
+  //Get.put(Controller(), tag: "Controller1", permanent: true);
 
   // ================
 
@@ -24,7 +25,7 @@ void main() {
       fenix: true
   )*/
 
-  Get.lazyPut<Controller>( () => Controller() );
+  //Get.lazyPut<Controller>( () => Controller() );
 
 
   // ================
@@ -41,15 +42,18 @@ void main() {
 
   // ================
 
-  //Get.create(() => Controller());
-
-  // ================
-
   //Controller controller = Get.find();
+  //Controller controller = Get.find(tag: "Controller1");
   //var controller = Get.find<Controller>();
   //var / final controller = Get.find(); // Errado
 
   //int counter = Get.find<Controller>().counter;
+
+  // ================
+
+  //Get.create(() => Controller());
+
+
 
   runApp(MyApp());
 

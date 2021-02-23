@@ -4,10 +4,4 @@ class Controller extends GetxController {
 
   int counter = 0;
 
-  @override
-  void onInit() {
-    print("onInit");
-    super.onInit();
-  }
-
 }

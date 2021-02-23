@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:super_counter_test/src/controllers/controller.dart';
+import 'package:super_counter_test/src/controllers/counter_controller.dart';
 import 'package:super_counter_test/src/model/counter.dart';
 import 'package:super_counter_test/src/screens/third_screen.dart';
 
 class SecondScreen extends StatelessWidget {
+
+  //CounterController counterController = CounterController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +30,7 @@ class SecondScreen extends StatelessWidget {
               onPressed: (){
 
                 Get.to(
-                  ThirdScreen(),
+                  () => ThirdScreen(),
                 );
 
               },

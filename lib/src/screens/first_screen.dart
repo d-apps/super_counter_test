@@ -8,6 +8,7 @@ class FirstScreen extends StatelessWidget {
 
   final CounterController counterController = CounterController();
 
+
   @override
   Widget build(BuildContext context) {
 
@@ -58,7 +59,7 @@ class FirstScreen extends StatelessWidget {
               child: Text("Go to Second Screen"),
               onPressed: (){
 
-                Get.off(
+                Get.to(
                   () => SecondScreen(),
                 );
 
